@@ -1,5 +1,4 @@
 import {
-  CHAT_PASSWORD,
   DEFAULT_MODEL,
   MODELS,
   PROMPT_1,
@@ -47,11 +46,6 @@ async function handleChat(request, env) {
     payload = await request.json();
   } catch {
     return resp("Bad JSON", "text/plain; charset=utf-8", 400);
-  }
-
-  const password = payload?.password ?? "";
-  if (password !== CHAT_PASSWORD) {
-    return resp("Invalid password", "text/plain; charset=utf-8", 403);
   }
 
   const requestedModel = payload?.model;

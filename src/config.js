@@ -7,7 +7,7 @@
 export const CHAT_PASSWORD = "123456";
 
 // 默认模型
-export const DEFAULT_MODEL = "meta/llama-3.1-405b-instruct";
+export const DEFAULT_MODEL = "z-ai/glm5";
 
 // 模型列表（label 是下拉显示；persona=1 使用 PROMPT_1；persona=2 使用 PROMPT_2）
 export const MODELS = [
